@@ -1,0 +1,80 @@
+/*violet #d9c7ed
+bleu ciel #b2ecf7
+framboise #f88595
+light orange #fcc197*/
+*{
+  margin: 0;
+  padding: 0;
+}
+.container-fluid{
+  /*width: 95%;*/
+}
+.connexion{
+  line-height: 70px;
+}
+#header{
+background-color: lightgreen;
+box-shadow: 10px 10px 5px #888888;
+text-align: center;
+margin-bottom: 20px;
+}
+.article{
+  margin-left: 20px;
+  width: 70%;
+  height: 480px;
+  background-color: #f88595;
+}
+.li_index{
+  border: 1px solid #f88595;
+  background-color: lightgreen;
+  border-top-right-radius: 25px;
+  list-style-type: none;
+  height: 50px;
+}
+#footer{
+background-color: lightgreen;
+box-shadow: -10px -10px 5px #888888;
+text-align: center;
+margin-top: 30px;
+bottom: 0px;
+}
+
+/*------------------------------FORM---------------------------------*/
+.form_sign_in, .form_sign_up{
+  background-color:#b2ecf7;
+  box-shadow: 10px 10px 5px #888888;
+  margin-bottom: 10px;
+}
+input{
+  margin-bottom: 10px;
+  height: 40px;
+  margin-top: 10px;
+}
+.btn-sign{
+  background-color: lightgreen;
+}
+/*----------------------------END FORM-------------------------------*/
+
+/*------------------------------CRUD---------------------------------*/
+.crud_nav{
+  text-align: center;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.crud_article{
+list-style-type: none;
+background-color: #b2ecf7;
+border: 2px solid  #f88595;
+height: 50px;
+margin-bottom: 7px;
+}
+.create_article{
+  /*margin-left: 20px;*/
+  /*width: 70%;*/
+  background-color: #f88595;
+}
+.paraph_create{
+  width: 90%;
+  margin: 5px;
+}
+/*----------------------------END CRUD-------------------------------*/
