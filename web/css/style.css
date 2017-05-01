@@ -50,7 +50,7 @@ input{
   height: 40px;
   margin-top: 10px;
 }
-.btn-sign{
+.btn-sign{update
   background-color: lightgreen;
 }
 /*----------------------------END FORM-------------------------------*/
@@ -78,3 +78,14 @@ margin-bottom: 7px;
   margin: 5px;
 }
 /*----------------------------END CRUD-------------------------------*/
+.show_update{
+
+}
+.show_update_articles{
+
+  position: relative;
+}
+.li_update{
+list-style-type: none;
+
+}

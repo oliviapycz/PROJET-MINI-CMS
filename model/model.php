@@ -52,7 +52,28 @@ function chosenArticles(){
 }
 
 // Update articles
+function updateArticle($newcountry, $newtitle, $newyear, $newfirst_paraph, $newsecond_paraph, $newthird_paraph){
+  require 'database_access.php';
+  $updateArticle = $bdd->prepare('UPDATE articles SET
+    country= :newcountry,
+    year= :newyear,
+    title= :newtitle,
+    first_paraph= :newfirst_paraph,
+    second_paraph= :newsecond_paraph,
+    third_paraph= :newthird_paraph
+     WHERE country="'.strtoupper($country).'"');
 
+  $updateArticle->execute(array(
+    'country' => $_GET['country'],
+    'newcountry'=> $newcountry,
+    'newyear'=> $newyear,
+    'newtitle' => $newtitle,
+    'newfirst_paraph' => $newfirst_paraph,
+    'newsecond_paraph' => $newsecond_paraph,
+    'newthird_paraph' => $newthird_paraph
+
+  ));
+}
 
 
 
