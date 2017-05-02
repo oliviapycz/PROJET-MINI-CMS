@@ -32,12 +32,14 @@ session_start();
             <a href="#update"><li class="crud_article col-lg-12 col-xs-12">Modifier un Article</li></a>
 
             <?php foreach ($articles as $article): ?>
+              <section class="essai">
+                <div ng-show="updateArticle" class="show_update_articles">
+                  <li ng-click="updateArticleForm" class="li_update"><?= "<a href='member_profile.php?country=" .strtoupper($article['country']). "' >".strtoupper($article['country']) . "|" . $article['year']."</a>" ?></li>
+                  <?php endforeach ?>
+                  <!-- <li class="li_index"><a href="#">VOIR PLUS</a></li> -->
+                </div>
+              </section>
 
-            <div ng-show="updateArticle" class="show_update_articles">
-              <li ng-click="updateArticleForm" class="li_update"><?= "<a href='member_profile.php?country=" .strtoupper($article['country']). "' >".strtoupper($article['country']) . "|" . $article['year']."</a>" ?></li>
-              <?php endforeach ?>
-              <!-- <li class="li_index"><a href="#">VOIR PLUS</a></li> -->
-            </div>
           </div>
 
 
